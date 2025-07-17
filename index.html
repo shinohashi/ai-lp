@@ -9,7 +9,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8; /* Very light blue */
+            background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
         }
@@ -19,7 +19,7 @@
             padding: 0 20px;
         }
         header {
-            background-color: #2a3d66; /* Primary Dark Blue */
+            background-color: #343a40;
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -29,7 +29,7 @@
             font-size: 2.5em;
         }
         .hero {
-            background: linear-gradient(rgba(42, 61, 102, 0.7), rgba(42, 61, 102, 0.7)), url('DJI_0006.JPG') no-repeat center center/cover;
+            background-color: #495057;
             color: #fff;
             text-align: center;
             padding: 100px 20px;
@@ -46,22 +46,21 @@
         .btn {
             display: inline-block;
             padding: 15px 35px;
-            background-color: #007bff; /* Bright Blue */
+            background-color: #007bff;
             color: #fff;
             text-decoration: none;
             font-size: 1.1em;
             border-radius: 5px;
             transition: background-color 0.3s;
-            border: none;
         }
         .btn:hover {
-            background-color: #0056b3; /* Darker Bright Blue */
+            background-color: #0056b3;
         }
         .btn-discord {
-            background-color: #5865f2; /* Official Discord Blue */
+            background-color: #7289da;
         }
         .btn-discord:hover {
-            background-color: #4752c4;
+            background-color: #5f73bc;
         }
         section {
             padding: 80px 0;
@@ -70,7 +69,6 @@
             text-align: center;
             font-size: 2.2em;
             margin-bottom: 60px;
-            color: #2a3d66; /* Primary Dark Blue */
         }
         .features {
             display: flex;
@@ -80,38 +78,28 @@
         }
         .feature-card {
             background-color: #fff;
-            border: 1px solid #e0e7ff;
+            border: 1px solid #e9ecef;
             border-radius: 8px;
             padding: 30px;
             width: calc(33.333% - 40px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(42, 61, 102, 0.15);
         }
         .feature-card h4 {
             font-size: 1.4em;
             margin-top: 0;
-            color: #007bff; /* Bright Blue */
-        }
-        #target {
-            background-color: #fff;
+            color: #007bff;
         }
         .target {
-            background-color: #f0f4f8; /* Very light blue */
+            background-color: #fff;
             padding: 60px 20px;
             border-radius: 8px;
-            border: 1px solid #e0e7ff;
         }
         .target ul {
             list-style: '✔';
             padding-left: 20px;
             max-width: 600px;
             margin: 0 auto;
-            color: #2a3d66;
         }
         .target li {
             padding-left: 10px;
@@ -120,10 +108,7 @@
         }
         .cta {
             text-align: center;
-            background-color: #2a3d66; /* Primary Dark Blue */
-            color: #fff;
-        }
-        .cta h3 {
+            background-color: #343a40;
             color: #fff;
         }
         .cta p {
@@ -133,8 +118,8 @@
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #e0e7ff; /* Light Blue */
-            color: #2a3d66; /* Primary Dark Blue */
+            background-color: #f1f1f1;
+            color: #555;
             font-size: 0.9em;
         }
 
@@ -148,7 +133,6 @@
             .feature-card {
                 width: 100%;
                 box-sizing: border-box;
-                margin-bottom: 20px;
             }
         }
     </style>
@@ -201,6 +185,29 @@
                         <li>一緒に開発する仲間やメンターを見つけたい方</li>
                         <li>最新の技術でポートフォリオを作成したい学生</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h3>参加者の声</h3>
+                <div class="features">
+                    <div class="feature-card">
+                        <img src="https://placehold.jp/80x80.png?text=Student" alt="受講生" style="border-radius: 50%; margin-bottom: 15px;">
+                        <h4>田中 優斗さん (大学2年生)</h4>
+                        <p>"プログラミング未経験でしたが、メンターの方々が基礎から丁寧に教えてくれました。今では簡単なAIチャットボットを自分で作れるようになり、開発の楽しさを実感しています。"</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://placehold.jp/80x80.png?text=Engineer" alt="エンジニア" style="border-radius: 50%; margin-bottom: 15px;">
+                        <h4>佐藤 美咲さん (Webエンジニア)</h4>
+                        <p>"実務でAIを導入する必要に迫られ参加しました。現場で役立つ具体的な知識や、同じ目標を持つ仲間と出会えたことが大きな収穫です。キャリアの幅が確実に広がりました。"</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://placehold.jp/80x80.png?text=Learner" alt="学習者" style="border-radius: 50%; margin-bottom: 15px;">
+                        <h4>鈴木 健太さん (独学からの参加)</h4>
+                        <p>"一人での学習はモチベーション維持が大変でしたが、ここでは毎週の勉強会や共同プロジェクトがあり、常に刺激を受けられます。仲間がいるから、難しい課題も乗り越えられます。"</p>
+                    </div>
                 </div>
             </div>
         </section>
